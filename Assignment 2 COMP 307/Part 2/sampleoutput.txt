@@ -1,0 +1,59 @@
+Please Note: The error at the beginning is due to a JGAP problem that I can't resolve. 
+My program works fine. P.S I was told by the head tutor that I would not lose marks for this, given that this is a well know JGAP Problem.
+
+
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jrelog4j_jgap_lf.log (Permission denied)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:272)
+	at org.apache.log4j.RollingFileAppender.setFile(RollingFileAppender.java:156)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:151)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:247)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:123)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:87)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:645)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:603)
+	at org.apache.log4j.PropertyConfigurator.configureRootCategory(PropertyConfigurator.java:500)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:406)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:432)
+	at org.apache.log4j.helpers.OptionConverter.selectAndConfigure(OptionConverter.java:460)
+	at org.apache.log4j.LogManager.<clinit>(LogManager.java:113)
+	at org.apache.log4j.Logger.getLogger(Logger.java:94)
+	at org.jgap.gp.GPFitnessFunction.<clinit>(GPFitnessFunction.java:29)
+	at GPProgram.main(GPProgram.java:69)
+[JGAP][14:02:42] INFO GPGenotype - Creating initial population
+[JGAP][14:02:42] INFO GPGenotype - Mem free: 123.0 MB
+[JGAP][14:02:42] INFO GPPopulation - Prototype program set
+[JGAP][14:02:42] INFO GPGenotype - Mem free after creating population: 123.0 MB
+[JGAP][14:02:42] INFO GPGenotype - Your configuration does not contain unused commands, this is good
+[JGAP][14:02:42] INFO GPGenotype - Evolving generation 0, memory free: 119.9 MB
+[JGAP][14:02:42] INFO GPGenotype - Best solution fitness: 85.41
+[JGAP][14:02:42] INFO GPGenotype - Best solution: (X * X) + (X * (X - 2.0))
+[JGAP][14:02:42] INFO GPGenotype - Depth of chrom: 3
+[JGAP][14:02:42] INFO GPGenotype - Evolving generation 1, memory free: 119.2 MB
+[JGAP][14:02:42] INFO GPGenotype - Evolving generation 2, memory free: 119.2 MB
+[JGAP][14:02:42] INFO GPGenotype - Evolving generation 3, memory free: 118.6 MB
+[JGAP][14:02:42] INFO GPGenotype - Best solution fitness: 64.38
+[JGAP][14:02:42] INFO GPGenotype - Best solution: (X * X) + ((X * X) + (X * (X - 2.0)))
+[JGAP][14:02:42] INFO GPGenotype - Depth of chrom: 4
+[JGAP][14:02:42] INFO GPGenotype - Evolving generation 4, memory free: 117.9 MB
+[JGAP][14:02:42] INFO GPGenotype - Evolving generation 5, memory free: 117.9 MB
+[JGAP][14:02:42] INFO GPGenotype - Best solution fitness: 63.86
+[JGAP][14:02:42] INFO GPGenotype - Best solution: ((X * X) + (X * (X - 2.0))) + ((X * X) + (1.0 ^ 1.0))
+[JGAP][14:02:42] INFO GPGenotype - Depth of chrom: 4
+[JGAP][14:02:42] INFO GPGenotype - Evolving generation 6, memory free: 117.3 MB
+[JGAP][14:02:42] INFO GPGenotype - Evolving generation 7, memory free: 116.6 MB
+[JGAP][14:02:42] INFO GPGenotype - Evolving generation 8, memory free: 116.0 MB
+[JGAP][14:02:42] INFO GPGenotype - Evolving generation 9, memory free: 115.3 MB
+[JGAP][14:02:42] INFO GPGenotype - Evolving generation 10, memory free: 114.7 MB
+[JGAP][14:02:42] INFO GPGenotype - Evolving generation 11, memory free: 114.7 MB
+[JGAP][14:02:42] INFO GPGenotype - Best solution fitness: 59.38
+[JGAP][14:02:42] INFO GPGenotype - Best solution: (X * X) + (1.0 + ((2.0 * X) * (X - 2.0)))
+[JGAP][14:02:42] INFO GPGenotype - Depth of chrom: 4
+[JGAP][14:02:42] INFO GPGenotype - Evolving generation 12, memory free: 114.0 MB
+[JGAP][14:02:42] INFO GPGenotype - Best solution fitness: 0.0
+[JGAP][14:02:42] INFO GPGenotype - Best solution: (X * X) + (1.0 + (((X ^ 2.0) * X) * (X - 2.0)))
+[JGAP][14:02:42] INFO GPGenotype - Depth of chrom: 5
